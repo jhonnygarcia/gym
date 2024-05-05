@@ -1,8 +1,11 @@
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from '@routes/AppRoutes';
 
-import { Button } from "keep-react";
-const App=()=>{
+const App = () => {
   return (
-    <Button size="xs">Default</Button>
-  )
-}
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
+  );
+};
 export default App;
