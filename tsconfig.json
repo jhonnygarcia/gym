@@ -33,7 +33,7 @@
       "@config/*": ["src/config/*"],
       "@components/*": ["src/components/*"],
       "@layout/*": ["src/layout/*"],
-      "@types/*": ["src/types/*"]
+      "@models/*": ["src/models/*"]
     }
   },
   "include": ["src/**/*"],
