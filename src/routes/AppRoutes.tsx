@@ -9,6 +9,7 @@ import { Navigate, useRoutes } from 'react-router-dom';
 const LoginPage = Loadable(lazy(() => import('@pages/Auth/Login/LoginPage')));
 const ForgotPage = Loadable(lazy(() => import('@pages/Auth/Forgot/ForgotPage')));
 const DashboardPage = Loadable(lazy(() => import('@pages/Dashboard/DashboardPage')));
+const SignupPage = Loadable(lazy(() => import('@pages/Auth/Signup/SignupPage')));
 
 export default function AppRoutes() {
   return useRoutes([
@@ -23,8 +24,12 @@ export default function AppRoutes() {
         {
           path: 'forgot',
           element: <ForgotPage />,
-        },
+        },  
       ],
+    },
+    {
+      path: 'signup',
+      element: <SignupPage />,
     },
     {
       path: '/',
